@@ -1,0 +1,97 @@
+{% load static %}
+<!DOCTYPE HTML>
+<!--
+	Astral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Mariage de Lucie et Guillaume</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{% static 'css\style.css' %}">
+		<!--<noscript><link rel="stylesheet" href="{% static 'css/noscript.css' %}" /></noscript>-->
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper-->
+			<div id="wrapper">
+
+				<!-- Nav -->
+					<nav id="nav">
+						<a href="#" class="icon solid fa-home"><span>Accueil</span></a>
+						<a href="#informations" class="icon solid fa-heart"><span>Informations</span></a>
+						<a href="#logement" class="icon solid fa-hotel"><span>Où loger</span></a>
+						<a href="mailto:bertrand.lucie@live.fr" class="icon solid fa-envelope"><span>Contact</span></a>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Me -->
+							<article id="home" class="panel intro">
+								<header>
+									<h1>Lucie et Guillaume</h1>
+									<p>Nous sommes à {{ jours }} jours du plus beau jour de notre vie.</p>
+									<br/>
+									<p><a href="{% static 'files/myevents.ics' %}">Ajouter l'événement dans votre calendrier</a></p>
+								</header>
+								<a href="#informations" class="jumplink pic">
+									<img src="{% static 'images/us.jpg' %}" alt="us" />
+								</a>
+							</article>
+
+						<!-- Informations -->
+							<article id="informations" class="panel">
+								<header>
+									<h2>Informations pratiques</h2>
+								</header>
+								<p>Le mariage sera célébré le 26 aout 2023.</p>
+								<section>
+									<div>
+										<div class="organisation">
+											<img class="i-orga" src="{% static 'icons/mairie.png' %}"/>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a viverra lectus, mollis fringilla magna. Proin convallis auctor dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+										</div>
+										<div class="organisation">
+											<img class="i-orga" src="{% static 'icons/laique.png' %}"/>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a viverra lectus, mollis fringilla magna. Proin convallis auctor dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+										</div>
+										<div class="organisation">
+											<img class="i-orga" src="{% static 'icons/champagne.png' %}"/>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a viverra lectus, mollis fringilla magna. Proin convallis auctor dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+										</div>
+										<!--<img class="image fit plan" src="{% static 'images/plan.png' %}" alt="plan"/>-->
+									</div>
+								</section>
+							</article>
+
+						<!-- Où loger -->
+							<article id="logement" class="panel">
+								<header>
+									<h2>Où vos loger</h2>
+								</header>
+								<p>Une liste d'hôtel est disponible <a href="https://www.nancy-tourisme.fr/preparer-son-sejour/sejourner-a-nancy/hotels/" target="_blank">ICI</a> sur l'office de tourisme de Nancy</p>
+								<p>N'hésitez pas à nous contacter pour des conseils sur la localisation ou la connaissance des hôtels.</p>
+							</article>
+					</div>
+
+				<!-- Footer -->
+					<div id="footer">
+						<ul class="copyright">
+							<li>&copy; D3spina.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="{% static 'js/jquery.min.js' %}"></script>
+			<script src="{% static 'js/browser.min.js' %}"></script>
+			<script src="{% static 'js/breakpoints.min.js' %}"></script>
+			<script src="{% static 'js/util.js' %}"></script>
+			<script src="{% static 'js/main.js' %}"></script>
+
+	</body>
+</html>
