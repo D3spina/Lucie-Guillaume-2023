@@ -1544,7 +1544,7 @@ input, select, textarea {
 
 		}
 
-/* icons */
+/* my change */
 	
 	.organisation {
 	    margin-top: 5%;
@@ -1553,9 +1553,28 @@ input, select, textarea {
         border-bottom: solid;
 	}
 
+	.organisation_t {
+	    margin-left: 5%;
+	    margin-top: 0%;
+		display: inline-flex;
+        align-items: center;
+	}
+
 	.i-orga {
 	    margin-right: 5%;
 	    margin-bottom: 5%
+	}
+
+	.temoin {
+		margin: 5% 5% 5% 12%;
+	}
+
+	.ptemoin {
+		margin-left: 50%;
+	}
+
+	.titre-t {
+		margin-top: 50%;
 	}
 
 /* Image */
