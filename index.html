@@ -32,7 +32,34 @@
 							<article id="home" class="panel intro">
 								<header>
 									<h1>Lucie et Guillaume</h1>
-									<p>Nous sommes à 401 jours du plus beau jour de notre vie.</p>
+									<p>
+									<script>
+										// Set the date we're counting down to
+										var countDownDate = new Date("Aug 26, 2023").getTime();
+
+										// Update the count down every 1 second
+										var x = setInterval(function() {
+
+										  // Get today's date and time
+										  var now = new Date().getTime();
+										    
+										  // Find the distance between now and the count down date
+										  var distance = countDownDate - now;
+										    
+										  // Time calculations for days, hours, minutes and seconds
+										  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+										    
+										  // Output the result in an element with id="demo"
+										  document.getElementById("demo").innerHTML = "Nous sommes à " + days + "jours du plus beau jour de notre vie.";
+										    
+										  // If the count down is over, write some text 
+										  if (distance < 0) {
+										    clearInterval(x);
+										    document.getElementById("demo").innerHTML = "C'EST LE JOUR J";
+										  }
+										}, 1000);
+									</script>
+									</p>
 									<br/>
 									<p><a href="static/files/myevents.ics">Ajouter l'événement dans votre calendrier</a></p>
 								</header>
